@@ -1,0 +1,388 @@
+@charset "utf-8";
+
+/*configuraçao geral*/
+*{
+    margin: 0px;
+    padding: 0px;
+    max-height: 100vh;
+    max-width: 99vw;
+}
+:root {
+    --backgroudparagrafo: rgba(128, 128, 128, 0.219);
+}
+/*todo h1*/
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*todo paragrafo*/
+ p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-image: url("../imagens/programming-g892742070_1280.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    height: 71vh;
+    width: 98.3vw;
+}
+header h1 {
+    font-size: 49px;
+    text-align: center;
+    font-family: bold;
+    padding-top: 49px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.822);
+}
+header p {
+    line-height: 1.4em;
+    text-align: center;
+    margin-top: 29px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 19px;
+}
+menu {
+    text-align: center;
+    margin-top: 9vh;
+}
+menu a {
+    color: white;
+    padding: 19px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.692);
+    font-size: 29px;
+    border: 1px solid rgb(0, 0, 0);
+}
+menu a:hover {
+    background-color: rgba(61, 60, 60, 0.849);
+    transition: .5s;
+    text-decoration: underline;
+}
+div#centermenu {
+    transform: translate(0%, 10%);
+    width: 79vw;
+    margin: auto;
+}
+div#background {
+    background-color: #d2691e1e;
+    height: 71vh;
+}
+
+/*configuraçao paragrafo parallax*/
+section.paragrafoparallax {
+    width: 98.3vw;
+    height: 31vh;
+    background-color: var(--backgroudparagrafo);
+    background-attachment: fixed;
+}
+section.paragrafoparallax h1 {
+    color: black;
+    text-align: center;
+    padding: 22px;
+}
+div#esquerda {
+    width: 48vw;
+    height: 31vh;
+}
+div#direita {
+    width: 48vw;
+    height: 31vh;
+    transform: translate(100%, -100%);
+}
+article p {
+    color: black;
+    font-family: var(--fontpadrao);
+    font-size: 19px;
+    text-align: justify;
+    padding-left: 19px;
+}
+/*configuraçao destaque*/
+section#destaque {
+    background-color: rgb(61, 61, 61);
+    height: 80vh;
+    width: 98.3vw;
+}
+div.colunas {
+    height: 65vh;
+    width: 25vw;
+    background-color: white;
+}
+div#coluna1 {
+    transform: translate(19%, 11%);
+}
+div#coluna2 {
+    transform: translate(142%, -89%);
+}
+div#coluna3 {
+    transform: translate(266%, -189%);
+}
+div#pic1 {
+    background-image: url("../imagens/bk1.jpg");
+    width: 25vw;
+    height: 23vh;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+div#pic2 {
+    background-image: url("../imagens/b3.jpg");
+    width: 25vw;
+    height: 23vh;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+div#pic3 {
+    background-image: url("../imagens/bk2.jpg");
+    width: 25vw;
+    height: 23vh;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+article.artcdestaque h1 {
+    transform: translate(12%,99%);
+    color: black;
+}
+article.artcdestaque p {
+    width: 21vw;
+    height: 23vh;
+    font-size: 18px;
+    transform: translate(0%,9%);
+    padding-top: 19px;
+}
+/*configuraçao penultima section*/
+article#penultimo h1 {
+ text-align: center;
+}
+article#penultimo p {
+    text-align: center;
+}
+/*configuraçao ultima section informaçoes*/
+section#secinformaçao {
+    height: 45vh;
+    width: 98.3vw;
+}
+div.divinformaçao {
+    height: 45vh;
+    width: 49.1vw;
+}
+div#div1 {
+    background-color: #2690D4;
+}
+div#div2 {
+    transform: translate(100%, -100%);
+    background-color: rgb(61, 61, 61);
+}
+article.artcinformaçao h1 {
+    color: white;
+    text-align: center;
+    padding: 29px;
+    font-size: 29px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.671);
+}
+article.artcinformaçao p {
+    color: white;
+    text-align: center;
+    padding: 9px;
+}
+footer {
+    height: 13vh;
+    width: 98.vw;
+    background-color: black;
+    position: relative;
+    top: 575px;
+}
+div.divfooter {
+    height: 13vh;
+    width: 48.8vw;
+}
+div#divfooter2 {
+    transform: translate(100%, -100%);
+}
+article.artcfooter p {
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    transform: translate(0%, 100%);
+}
+
+
+
+/*configuraçao tablets*/
+@media screen and (max-width:768px) {
+    header div {
+        padding: 11px;
+    }
+    header h1 {
+        font-size: 39px;
+        text-align: center;
+        font-family: bold;
+        padding-top: 9px;
+        text-shadow: 1px 1px 1px black;
+    }
+    header p {
+        line-height: 1.4em;
+        text-align: center;
+        margin-top: 9px;
+        text-shadow: 1px 1px 1px black;
+        font-size: 17px;
+        padding: 9px;
+    }
+    menu {
+        text-align: center;
+        margin-top: 5vh;
+    }
+    menu a {
+        color: white;
+        padding: 19px;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.692);
+        font-size: 17px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    section.paragrafoparallax {
+        width: 98.3vw;
+        height: 39vh;
+        background-color: var(--backgroudparagrafo);
+        background-attachment: fixed;
+    }
+    div#esquerda {
+        width: 48vw;
+        height: 39vh;
+    }
+    div#direita {
+        width: 48vw;
+        height: 39vh;
+        transform: translate(100%, -100%);
+    }
+    section.paragrafoparallax h1 {
+        color: black;
+        text-align: center;
+        padding: 11px;
+        font-size: 19px;
+    }
+    article p {
+        color: black;
+        font-family: var(--fontpadrao);
+        font-size: 17px;
+        text-align: justify;
+        padding-left: 15px;
+    }
+}
+
+
+/*configuraçoes celulares*/
+@media screen and (max-width: 481px) {
+    header div {
+        padding: 11px;
+    }
+    header h1 {
+        font-size: 29px;
+        text-align: center;
+        font-family: bold;
+        padding-top: 29px;
+        text-shadow: 1px 1px 1px black;
+    }
+    header p {
+        line-height: 1.4em;
+        text-align: center;
+        margin-top: 9px;
+        text-shadow: 1px 1px 1px black;
+        font-size: 15px;
+        padding: 9px;
+    }
+    menu {
+        text-align: center;
+        margin-top: 5vh;
+    }
+    section.paragrafoparallax {
+        width: 98.3vw;
+        height: 47vh;
+        background-color: var(--backgroudparagrafo);
+        background-attachment: fixed;
+    }
+    div#esquerda {
+        width: 48vw;
+        height: 47vh;
+    }
+    div#direita {
+        width: 48vw;
+        height: 47vh;
+        transform: translate(100%, -100%);
+    }
+    section.paragrafoparallax h1 {
+        color: black;
+        text-align: center;
+        padding: 11px;
+        font-size: 19px;
+    }
+    article p {
+        color: black;
+        font-family: var(--fontpadrao);
+        font-size: 16px;
+        text-align: justify;
+        padding-left: 16px;
+    }
+}
+
+
+/*configuraçoes celulares menores*/
+@media screen and (max-width: 361px) {
+    header div {
+        padding: 11px;
+    }
+    header h1 {
+        font-size: 39px;
+        text-align: center;
+        font-family: bold;
+        padding-top: 29px;
+        text-shadow: 1px 1px 1px black;
+    }
+    header p {
+        line-height: 1.4em;
+        text-align: center;
+        margin-top: 9px;
+        text-shadow: 1px 1px 1px black;
+        font-size: 15px;
+        padding: 9px;
+    }
+    menu {
+        text-align: center;
+        margin-top: 5vh;
+    }
+    menu a {
+        color: white;
+        padding: 19px;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.692);
+        font-size: 12px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    section.paragrafoparallax {
+        width: 98.3vw;
+        height: 47vh;
+        background-color: var(--backgroudparagrafo);
+        background-attachment: fixed;
+    }
+    div#esquerda {
+        width: 48vw;
+        height: 47vh;
+    }
+    div#direita {
+        width: 48vw;
+        height: 47vh;
+        transform: translate(100%, -100%);
+    }
+    section.paragrafoparallax h1 {
+        color: black;
+        text-align: center;
+        padding: 11px;
+        font-size: 18px;
+    }
+    article p {
+        color: black;
+        font-family: var(--fontpadrao);
+        font-size: 15px;
+        text-align: justify;
+        padding-left: 15px;
+    }
+}
